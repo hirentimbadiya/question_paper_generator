@@ -3,10 +3,13 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const questionRouter = require('./routes/questionRouter');
 const swagger = require('./swagger');
+const dotenv = require('dotenv');
 
 const app = express();
+dotenv.config();
 
-mongoose.connect('mongodb://mongo-container:27017/questionpaper', { useNewUrlParser: true, useUnifiedTopology: true });
+const mongoURI = process.env.MONGODB_URI;
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(bodyParser.json());
 
