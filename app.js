@@ -4,8 +4,11 @@ const bodyParser = require('body-parser');
 const questionRouter = require('./routes/questionRouter');
 const swagger = require('./swagger');
 const dotenv = require('dotenv');
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
+
 dotenv.config();
 
 const mongoURI = process.env.MONGODB_URI;
@@ -17,7 +20,7 @@ app.use(bodyParser.json());
 app.use('/api-docs', swagger.serveSwaggerUI, swagger.setupSwaggerUI);
 
 app.get("/", (req, res) => {
-    res.status(200).send("API Docs are available at /api-docs route");
+    res.status(200).send("Server Is Up and Running. API Docs are available at /api-docs route");
 })
 
 // Use questionRouter for handling question-related routes
