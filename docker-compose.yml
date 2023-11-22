@@ -1,0 +1,27 @@
+version: "3"
+name: question_paper_generator
+services:
+  mongodb:
+    image: mongo
+    container_name: mongo-container
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb-data:/data/db
+    networks:
+      - question-paper-network
+
+  nodejs_backend:
+    container_name: nodejs_backend
+    build: ./
+    ports:
+      - "3000:3000"
+    networks:
+      - question-paper-network
+
+volumes:
+  mongodb-data:
+
+networks:
+  question-paper-network:
+    driver: bridge
