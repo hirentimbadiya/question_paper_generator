@@ -33,8 +33,9 @@ A step by step series of examples that tell you how to get a development environ
 4. **go to root directory** of the project ***i.e. question_paper_generator***
 5. **Run `docker-compose up` to start the server.**
 6. **if you are not using docker then install the dependencies using `npm install` command and then start the local development server using `node app.js` or `npm run dev` command.**
-7. **change url in swagger.js file to `http://localhost:3000` if you are running the server locally.**
-8. **Go to `http://localhost:3000/api-docs` to view the Swagger documentation.**
+7. **then you need to also start mongoDB in your local environment.**
+8. **change url in swagger.js file to `http://localhost:3000` if you are running the server locally.**
+9. **Go to `http://localhost:3000/api-docs` to view the Swagger documentation.**
 
 ## File Structure
 
