@@ -11,7 +11,7 @@ const options = {
         },
         servers: [
             {
-                url: 'http://localhost:3000',
+                url: 'https://question-paper-generator-rx2z.onrender.com/',
                 description: 'Local development server',
             },
         ],
