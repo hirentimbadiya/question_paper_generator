@@ -10,8 +10,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them:
 
-- **Node.js and npm**
-- **Docker and Docker Desktop**
+- **All you need to run this app locally is docker. You can download it from [here](https://www.docker.com/products/docker-desktop)**.
+- **`Docker and Docker Desktop`**
+
+- if you want to run this app **without docker** then you need to install following things:
+  - **`Node.js`**
+  - **`MongoDB`**
 
 ### Installing
 
@@ -30,14 +34,14 @@ A step by step series of examples that tell you how to get a development environ
 
 ## File Structure
 
-- `app.js`: The main application file.
-- `routes/questionRouter.js`: Handles question-related routes.
-- `controllers/questionController.js`: Handles question-related logic.
-- `controllers/getQuestionsController.js`: Handles logic for getting questions from the database.
-- `models/questionModel.js`: Defines the question schema.
-- `swagger.js`: Sets up Swagger documentation.
-- `docker-compose.yml`: Sets up the docker containers.
-- `Dockerfile`: Sets up the docker image.
+- **`app.js`**: The main application file.
+- **`routes/questionRouter.js`**: Handles question-related routes.
+- **`controllers/questionController.js`**: Handles question-related logic.
+- **`controllers/getQuestionsController.js`**: Handles logic for getting questions from the database.
+- **`models/questionModel.js`**: Defines the question schema.
+- **`swagger.js`**: Sets up Swagger documentation.
+- **`docker-compose.yml`**: Sets up the docker containers.
+- **`Dockerfile`**: Sets up the docker image.
 
 ## Built With
 

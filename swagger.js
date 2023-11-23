@@ -12,7 +12,7 @@ const options = {
         servers: [
             {
                 url: 'https://question-paper-generator-rx2z.onrender.com/',
-                description: 'Local development server',
+                description: 'development server',
             },
         ],
     },
