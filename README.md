@@ -3,7 +3,7 @@
 This is a Node.js application which generates question paper according to total marks and difficulty distribution from easy, medium and hard questions. The questions are fetched from the database and are shuffled before generating the question paper.
 
 ## Deployment
-**you can find swagger documentation [question-paper-generator](https://question-paper-generator-rx2z.onrender.com/api-docs/)**
+**you can find swagger documentation here -> [question-paper-generator](https://question-paper-generator-rx2z.onrender.com/api-docs/)**
 
 ## Getting Started
 
